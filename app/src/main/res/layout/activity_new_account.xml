@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#5C52C4DF"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".LoginActivity">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/classImage"
+                android:layout_width="match_parent"
+                android:layout_height="442dp"
+                android:src="@drawable/login_background"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="-3dp"
+                tools:layout_editor_absoluteY="3dp" />
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/cardView"
+                android:layout_width="293dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="57dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginEnd="61dp"
+                android:layout_marginBottom="71dp"
+                android:background="#3E29A5F3"
+                android:elevation="10mm"
+                android:padding="5dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="371dp"
+                    android:layout_marginTop="5mm"
+                    android:orientation="vertical"
+                    android:padding="2mm">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="5mm"
+                        android:hint="Username/Email Id"
+                        android:textSize="6mm">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:height="10mm"
+                            android:backgroundTint="#22c1c3"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4mm"
+                        android:elevation="5mm"
+                        app:passwordToggleEnabled="true"
+                        android:hint="New Password"
+                        android:textSize="6mm">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/new_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:height="10mm"
+                            android:backgroundTint="#22c1c3"
+                            android:inputType="textPassword"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4mm"
+                        app:passwordToggleEnabled="true"
+                        android:elevation="5mm"
+                        android:hint="Confirm New Password"
+                        android:textSize="6mm">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/cnf_new_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:height="10mm"
+                            android:backgroundTint="#22c1c3"
+                            android:inputType="textPassword"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="268dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="289dp"
+                app:cardCornerRadius="5mm"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cardView"
+                app:layout_constraintVertical_bias="0.505"
+                app:layout_goneMarginTop="4mm">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/btn_next_page"
+                        android:layout_width="268dp"
+                        android:layout_height="70dp"
+                        android:background="#1c849e"
+                        android:text="Next Page"
+                        android:textColor="#fffffc"
+                        android:textSize="3mm" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="22mm"
+                android:layout_height="22mm"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintBottom_toTopOf="@+id/cardView"
+                app:layout_constraintEnd_toEndOf="@+id/classImage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/classImage">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="5mm"
+                    android:src="@drawable/blackboard" />
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
